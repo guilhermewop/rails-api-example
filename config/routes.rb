@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #resources :sports
+  resources :sports, controller: 'api/v1/sports'
   
   scope module: 'api' do
     namespace :v1 do
