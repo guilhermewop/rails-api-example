@@ -5,5 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :sports
     end
+    namespace :v2 do
+      resources :sports
+    end
   end
 end

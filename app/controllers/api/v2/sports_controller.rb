@@ -1,4 +1,4 @@
-module Api::V1
+module Api::V2
   class SportsController < ApiController
     before_action :set_sport, only: [:show, :update, :destroy]
 
@@ -6,7 +6,7 @@ module Api::V1
     def index
       @sports = Sport.all
 
-      render json: @sports, each_serializer: ::V1::SportSerializer
+      render json: @sports, each_serializer: ::V2::SportSerializer
     end
 
     # GET /sports/1
